@@ -89,7 +89,12 @@
                         </header>
                     </div>
                 </div>
-                <form id="kontakt-formular" action="kontakt.html" method="post">
+                <form
+                    onsubmit="sendEmail(); reset(); return false;"
+                    id="kontakt-formular"
+                    action="kontakt.html"
+                    method="post"
+                >
                     <div class="row">
                         <div class="col-3">
                             <label for="vorname" class="screenreader"
@@ -100,6 +105,7 @@
                                 type="text"
                                 name="vorname"
                                 placeholder="Vorname"
+                                required
                             />
                         </div>
                         <div class="col-3">
@@ -111,6 +117,7 @@
                                 type="text"
                                 name="nachname"
                                 placeholder="Nachname"
+                                required
                             />
                         </div>
                     </div>
@@ -126,6 +133,7 @@
                                 placeholder="E-Mail"
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 title="Bitte gib eine gültige E-Mail Adresse ein."
+                                required
                             />
                         </div>
                     </div>
@@ -172,4 +180,18 @@
             </div>
         </footer>
     </body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: 'smtp.elasticmail.com',
+                Username: 'tobias.streich@icloud.com',
+                Password: 'EswBwuHh1)',
+                To: 'tobias.p.streich@gmail.com',
+                From: document.getElementById('email').value,
+                Subject: 'New Contact Form Enquiry',
+                Body: 'Name' + document.getElementByID('nachricht').value,
+            }).then((message) => alert(message));
+        }
+    </script>
 </html>
