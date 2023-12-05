@@ -14,295 +14,278 @@ ROT:            #A62C21
 /* === GLOBAL === */
 
 body {
-   margin: 0;
-   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
-   font-size: 16px;
+    margin: 0;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 16px;
 }
 
 * {
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :focus {
-   outline: none;
+    outline: none;
 }
 
 section {
-   padding-top: 4rem;
-   padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 @media (max-width: 1366px) {
-   section {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-   }
+    section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 1024px) {
-   section {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-   }
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
-   section {
-      padding-top: .5rem;
-      padding-bottom: .5rem;
-   }
+    section {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
-
 
 /* === GENERELLES === */
 
 .clearfix::after {
-   content: "";
-   display: block;
-   clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .active {
-   background-color: #9b9b9b !important;
+    background-color: #9b9b9b !important;
 }
 
 .fettgedruckter-text {
-   font-weight:  bold;
+    font-weight: bold;
 }
 
 .screenreader {
-   display: none;
+    display: none;
 }
 
 .btn-typ-1 {
-   background-color: #A62C21;
-   border: 2px solid #A62C21;
-   color: #0f0f0f;
-   padding: .4rem .6rem;
-   transition: border .5s ease-in-out;
+    background-color: #a62c21;
+    border: 2px solid #a62c21;
+    color: #0f0f0f;
+    padding: 0.4rem 0.6rem;
+    transition: border 0.5s ease-in-out;
 }
 
 .btn-typ-1:hover {
-   border: 2px solid #FFF;
+    border: 2px solid #fff;
 }
 
 .btn-typ-2 {
-   border: 2px solid #FFF;
-   background-color: transparent;
-   color: #FFF;
-   padding: .4rem .6rem;
-   transition: color .5s ease-in-out,  border .5s ease-in-out;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 
 .btn-typ-2:hover {
-   color: #A62C21;
-   border: 2px solid #A62C21;
+    color: #a62c21;
+    border: 2px solid #a62c21;
 }
 
 .btn-typ-3 {
-   border: 2px solid #3D3F45;
-   background-color: transparent;
-   font-size: 1rem;
-   color: #3D3F45;
-   transition: border .5s ease-in-out;
+    border: 2px solid #3d3f45;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #3d3f45;
+    transition: border 0.5s ease-in-out;
 }
 
 .btn-typ-3:hover {
-   border: 2px solid #A62C21;
+    border: 2px solid #a62c21;
 }
 
 .intro-container {
-   text-align: center;
-   width: 80%;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 2.5rem;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
 }
 
 @media (max-width: 1366px) {
-
-   .intro-container {
-      width: 90%;
-   }
-   
+    .intro-container {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1024px) {
-
-   .intro-container {
-      width: 100%;
-   }
-   
+    .intro-container {
+        width: 100%;
+    }
 }
 
 .intro-container > h1 {
-   font-size: 1.6rem;
-   text-transform: uppercase;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .intro-container > p {
-   font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 1366px) {
-
-   .intro-container > p {
-      margin-bottom: .5rem;
-   }
-   
+    .intro-container > p {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (max-width: 1024px) {
-
-   .intro-container > p {
-      margin-bottom: 0;
-   }
-   
+    .intro-container > p {
+        margin-bottom: 0;
+    }
 }
-
-
-
 
 /*=== Navigationsleiste ===*/
 
 #header-nav {
     width: 100%;
     height: 50px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     position: relative;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 #desktop-nav .active {
-   border-radius: 15px;
+    border-radius: 15px;
 }
 
- #homeButton {
-    margin-top: .9rem;
+#homeButton {
+    margin-top: 0.9rem;
     color: #0f0f0f;
- }
+}
 
- #homeButton:hover {
+#homeButton:hover {
     color: #464646;
- }
+}
 
- #header-nav ul {
+#header-nav ul {
     margin: 0;
     padding: 0;
     float: right;
     height: 100%;
- }
+}
 
- #header-nav ul > li {
+#header-nav ul > li {
     display: inline-block;
     height: 100%;
-    padding: 0 .4rem 0 .4rem;
- }
+    padding: 0 0.4rem 0 0.4rem;
+}
 
- #header-nav ul > li > a {
+#header-nav ul > li > a {
     display: inline-block;
-    margin-top: .9rem;
- }
+    margin-top: 0.9rem;
+}
 
- #header-nav ul > li > a:visited {
+#header-nav ul > li > a:visited {
     color: #0f0f0f;
     text-decoration: none;
- }
- 
- #header-nav ul > li > a:link {
+}
+
+#header-nav ul > li > a:link {
     color: #0f0f0f;
     text-decoration: none;
- }
+}
 
- #header-nav ul > li > a:hover {
+#header-nav ul > li > a:hover {
     color: #464646;
     text-decoration: none;
- }
+}
 
- #header-nav ul > li > a:active {
+#header-nav ul > li > a:active {
     color: #464646;
     text-decoration: none;
- }
+}
 
-
- #header-nav .col-6 {
-   padding-top: 0;
-   padding-bottom: 0;
- }
+#header-nav .col-6 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 #header-nav .container,
 #header-nav .row,
 #header-nav .col-6 {
-   height: 100%;
+    height: 100%;
 }
 
 .logo-link {
-   display: inline-block;
+    display: inline-block;
 }
 
- 
+/* === NAVIGATIONSLEISTE (MOBIL) === */
 
+#mobile-nav-button {
+    color: #000;
+    float: right;
+    font-size: 2rem;
+    border: 2px solid #000;
+    border-radius: 7px;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
 
- /* === NAVIGATIONSLEISTE (MOBIL) === */
+#mobile-nav-button > span {
+    position: absolute;
+    bottom: -0.5px;
+    left: 7.5px;
+}
 
- #mobile-nav-button {
+#mobile-nav-content > ul > li {
+    display: block;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0 1.2rem;
+    text-align: center;
+}
 
-   color: #000;
-   float: right;
-   font-size: 2rem;
-   border: 2px solid #000;
-   border-radius: 7px;
-   width: 37px;
-   height: 37px;
-   position: relative;
-   margin-top: .4rem;
-   margin-bottom: .4rem;
+#mobile-nav-dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
 
- }
+#mobile-nav-content {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: none;
+}
 
- #mobile-nav-button > span {
-   position: absolute;
-   bottom: -0.5px;
-   left: 7.5px;
- }
+#mobile-nav-dropdown:hover > #mobile-nav-content {
+    display: block;
+}
 
- #mobile-nav-content > ul > li {
-   display: block;
-   background-color: #f0f0f0;
-   border-radius: 5px;
-   height: 50px;
-   padding: 0 1.2rem;
-   text-align: center;
- }
-
- #mobile-nav-dropdown {
-   position: relative;
-   display: inline-block;
-   float: right;
- }
-
- #mobile-nav-content {
-   position: absolute;
-   right: 0;
-   top: 50px;
-   display: none;
- }
-
- #mobile-nav-dropdown:hover > #mobile-nav-content {
-   display: block;
- }
-
- #mobile-nav {
-   display: none;
- }
-
+#mobile-nav {
+    display: none;
+}
 
 @media (max-width: 768px) {
-
-   #desktop-nav { display: none        }
-   #mobile-nav { display: inline-block }
-
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: inline-block;
+    }
 }
 
 /* === COUNTDOWN BEREICH */
@@ -323,23 +306,24 @@ section {
     }
 
     #countdown-section {
-        padding: .5rem;
+        padding: 0.5rem;
     }
 }
 
 /* === tech ME BEREICH === */
 
-#tech p, h1 {
+#tech p,
+h1 {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
+    text-align: center;
 }
 
 .tech-teaser-box {
     background-color: #464646;
     text-align: center;
-    color:#FFF;
+    color: #fff;
     padding: 1rem 3rem 2.5rem;
     width: 60%;
     margin-bottom: 2rem;
@@ -361,312 +345,394 @@ section {
     height: 40px;
     width: 40%;
     display: inline-block;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     min-width: 100px;
     margin-top: 1rem;
     border-radius: 15px;
- }
+}
 
- .tech-ansehen-btn:link {
-    color: #FFF;
- }
- 
- .tech-ansehen-btn:visited {
-    color: #FFF;
- }
- 
- .tech-ansehen-btn:active {
-    color: #FFF;
- }
- 
- .tech-ansehen-btn:hover {
+.tech-ansehen-btn:link {
+    color: #fff;
+}
+
+.tech-ansehen-btn:visited {
+    color: #fff;
+}
+
+.tech-ansehen-btn:active {
+    color: #fff;
+}
+
+.tech-ansehen-btn:hover {
     color: #9b9b9b;
     border: 2px solid #9b9b9b;
- }
+}
 
- @media (max-width: 1366px) {
-
+@media (max-width: 1366px) {
     .tech-teaser-box {
-       width: 80%;
+        width: 80%;
     }
- 
- }
- 
- @media (max-width: 1024px) {
- 
+}
+
+@media (max-width: 1024px) {
     .tech-teaser-box {
-       width: 100%;
-       margin-bottom: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
     }
- 
+
     #tech .row > .col-3:nth-of-type(even) > .tech-teaser-box {
-       margin-left: .6rem;
+        margin-left: 0.6rem;
     }
-    
+
     #tech .row > .col-3:nth-of-type(odd) > .tech-teaser-box {
-       margin-right: .6rem;
+        margin-right: 0.6rem;
     }
- 
- }
- 
- @media (max-width: 768px) {
- 
+}
+
+@media (max-width: 768px) {
     #tech .row > .col-3:nth-of-type(even) > .tech-teaser-box {
-       margin-left: 0rem;
-       margin-right: auto;
-
+        margin-left: 0rem;
+        margin-right: auto;
     }
-    
+
     #tech .row > .col-3:nth-of-type(odd) > .tech-teaser-box {
-       margin-right: auto;
-       margin-left: 0rem;
+        margin-right: auto;
+        margin-left: 0rem;
     }
- }
+}
 
+/* === HEADER - BANNER === */
 
- /* === HEADER - BANNER === */
-
- #header-banner {
+#header-banner {
     width: 100%;
     height: 0;
     padding-top: 20.83%;
-    background: url("../img/hintergrund.jpg") no-repeat center center;
+    background: url('../img/hintergrund.jpg') no-repeat center center;
     background-size: contain;
- }
+}
 
- #header-banner-klein {
+#header-banner-klein {
     width: 100%;
     height: 0;
     padding-top: 15.625%;
-    background: url("../img/hintergrund-klein.jpg") no-repeat center center;
+    background: url('../img/hintergrund-klein.jpg') no-repeat center center;
     background-size: contain;
- }
+}
 
- /* === NEWSLETTER-BEREICH === */ 
+/* === NEWSLETTER-BEREICH === */
 
- #newsletter-bereich {
-   width: 100%;
-   background-color: #3D3F45;
-   padding-top: 0;
-   padding-bottom: 0;
- }
+#newsletter-bereich {
+    width: 100%;
+    background-color: #3d3f45;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
- #nb-werbetext {
-   color: #FFF;
-   font-size: 1.2rem;
- }
+#nb-werbetext {
+    color: #fff;
+    font-size: 1.2rem;
+}
 
- #nb-email-input {
-   width: 78%;
-   height: 35px;
-   border: 2px solid #FFF;
-   padding: .4rem;
-   border-radius: 10px;
- }
+#nb-email-input {
+    width: 78%;
+    height: 35px;
+    border: 2px solid #fff;
+    padding: 0.4rem;
+    border-radius: 10px;
+}
 
- #nb-btn {
-   height: 35px;
-   border-radius: 10px;
- }
+#nb-btn {
+    height: 35px;
+    border-radius: 10px;
+}
 
- #nb-form {
-   margin-top: .4rem;
-   float: right;
-   width: 100%;
-   text-align: right;
- }
+#nb-form {
+    margin-top: 0.4rem;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
 
- @media (max-width: 1822px) {
-   #nb-email-input {
-      width: 70%;
+@media (max-width: 1822px) {
+    #nb-email-input {
+        width: 70%;
     }
- }
+}
 
- @media (max-width: 1358px) {
-   #nb-email-input {
-      width: 100%;
-      margin-bottom: .5rem;
-   }
+@media (max-width: 1358px) {
+    #nb-email-input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
 
-   #nb-btn {
-      width: 100%;
-   }
- }
+    #nb-btn {
+        width: 100%;
+    }
+}
 
- @media (max-width: 768px) {
-   #nb-werbetext {
-      display: none;
-   }
-   #nb-form {
-      margin-top: 0;
-   }
-   #newsletter-bereich .col-4 {
-      display: none;
-   }
- }
+@media (max-width: 768px) {
+    #nb-werbetext {
+        display: none;
+    }
+    #nb-form {
+        margin-top: 0;
+    }
+    #newsletter-bereich .col-4 {
+        display: none;
+    }
+}
 
- @media (max-width: 480px) {
-   #nb-email-input {
-      height: 25px;
-   }
-   #nb-btn {
-      height: 25px;
-      padding: .1rem;
-   }
- }
+@media (max-width: 480px) {
+    #nb-email-input {
+        height: 25px;
+    }
+    #nb-btn {
+        height: 25px;
+        padding: 0.1rem;
+    }
+}
 
+/* === LEISTUNGEN - SEITE === */
+
+.flex-container {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 1366px) {
+    .flex-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .flex-container {
+        width: 100%;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
+.flex-container,
+.intro-container {
+    width: 80%;
+}
+
+.technologien-box {
+    border-radius: 25px;
+    background-color: #3d3f45;
+    flex-basis: 25%;
+    color: #fff;
+    padding: 2rem 2rem;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 1544px) {
+    .flex-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1224px) {
+    .technologien-box {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .flex-container {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .technologien-box {
+        padding: 2rem 4rem;
+        margin-bottom: 1rem;
+        min-width: initial;
+    }
+}
+
+.technologien-box h1 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.leistungen-box ul {
+    padding: 0;
+}
+
+.leistungen-box ul > li {
+    list-style-position: inside;
+    margin-bottom: 0.5rem;
+}
+
+.leistung-auswählen-btn {
+    width: 50%;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.leistung-auswählen-btn:hover {
+    font-weight: normal;
+}
 
 /* === ÜBER UNS BEREICH === */
 
 #über-uns-bereich {
-   background-color: #FFF;
+    background-color: #fff;
 }
 
 #über-uns-container {
-   position: relative;
-   width: 85%;
-   margin-right: auto;
-   margin-left: auto;
+    position: relative;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #über-uns-container > img {
-   position: absolute;
-   top: 0;
-   right: 100px;
-   height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    height: 100%;
 }
 
 #über-uns-container > p {
-   width: 75%;
-   font-size: 1.2rem;
+    width: 75%;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 1440px) {
-
-   #über-uns-container > img {
-      right: 50px;
-   }
+    #über-uns-container > img {
+        right: 50px;
+    }
 }
 
 @media (max-width: 1280px) {
-
-   #über-uns-container > img {
-      right: 0px;
-   }
+    #über-uns-container > img {
+        right: 0px;
+    }
 }
 
 @media (max-width: 1140px) {
-
-   #über-uns-container > p {
-      width: 70%;
-   }
+    #über-uns-container > p {
+        width: 70%;
+    }
 }
 
 @media (max-width: 1024px) {
+    #über-uns-container > p {
+        width: 100%;
+    }
 
-   #über-uns-container > p {
-      width: 100%;
-   }
-
-   #über-uns-container > img {
-      display: none;
-   }
+    #über-uns-container > img {
+        display: none;
+    }
 }
 
 /* === FOOTER === */
 
 #footer {
-   background-color: #9b9b9b;
-   color: #0f0f0f;
-   height: 2.8rem;
+    background-color: #9b9b9b;
+    color: #0f0f0f;
+    height: 2.8rem;
 }
 
 #footer-nav {
-   display: inline-block;
-   float: right;
+    display: inline-block;
+    float: right;
 }
 
 #footer-nav > a {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 #footer-nav > a:link {
-   color: #FFF;
+    color: #fff;
 }
 
 #footer-nav > a:visited {
-   color: #FFF;
+    color: #fff;
 }
 
 #footer-nav > a:active {
-   color: #FFF;
+    color: #fff;
 }
 
 #footer-nav > a:hover {
-   color: #F0F0F0;
+    color: #f0f0f0;
 }
 
 @media (max-width: 565px) {
-   #footer span {
-      display: none;
-   }
+    #footer span {
+        display: none;
+    }
 }
 
 /* === KONTAKT SEITE === */
 
 #kontakt-formular input,
 #kontakt-formular textarea {
-   width: 100%;
-   border: 2px solid #3D3F45;
-   padding: .5rem;
-   font-size: 1rem;
-   font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
-   color:#3D3F45;
-   transition: border .4s ease-in-out;
+    width: 100%;
+    border: 2px solid #3d3f45;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    color: #3d3f45;
+    transition: border 0.4s ease-in-out;
 }
 
 #kontakt-formular textarea {
-   height: 100px;
+    height: 100px;
 }
 
 #absendenButton {
-   width: 150px;
-   height: 39px;
+    width: 150px;
+    height: 39px;
 }
-
 
 #kontakt-formular input:hover,
 #kontakt-formular textarea:hover {
-   border: 2px solid #A62C21;
+    border: 2px solid #a62c21;
 }
 
 @media (max-width: 768px) {
-   #kontakt-formular button {
-      width: 100%;
-   }
+    #kontakt-formular button {
+        width: 100%;
+    }
 }
 
 #kontakt-formular {
-   width: 80%;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
 }
 
 @media (max-width: 1366px) {
-
-   #kontakt-formular {
-      width: 90%;
-   }
-   
+    #kontakt-formular {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1024px) {
-
-   #kontakt-formular {
-      width: 100%;
-   }
-   
+    #kontakt-formular {
+        width: 100%;
+    }
 }
 
 /* === IMPRESSUM - BEREICH === */
@@ -675,23 +741,23 @@ section {
 #impressum-bereich h2,
 #impressum-bereich h3,
 #impressum-bereich p {
-   text-align: center;
+    text-align: center;
 }
 
 #impressum-bereich h1 {
-   font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 #impressum-bereich h2 {
-   font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 #impressum-bereich h3 {
-   font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 #impressum-bereich p {
-   font-size: 1rem;
+    font-size: 1rem;
 }
 
 #impressum-bereich a {
@@ -716,38 +782,47 @@ p {
    margin: 0;
    color: #FFF;
    text-align: center;
-} 
+}
 
 */
 
+/* === GRID SYSTEM === */
 
- /* === GRID SYSTEM === */
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
- .container {
-   width: 95%;
-   margin-left: auto;
-   margin-right: auto;
- }
+.row::after {
+    content: '';
+    clear: both;
+    display: block;
+}
 
- .row::after {
-   content: "";
-   clear: both;
-   display: block;
- }
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 0.8rem;
+}
 
- [class*='col-'] {
-   float: left;
-   min-height: 1px;
-   padding: .8rem;
- }
- 
- .col-1 { width: 16.666%;  }
- .col-2 { width: 33.333%;  }
- .col-3 { width: 50%;      }
- .col-4 { width: 66.666%   }
- .col-6 { width: 100%;     }
+.col-1 {
+    width: 16.666%;
+}
+.col-2 {
+    width: 33.333%;
+}
+.col-3 {
+    width: 50%;
+}
+.col-4 {
+    width: 66.666%;
+}
+.col-6 {
+    width: 100%;
+}
 
- /* 
+/*
 
  === WICHTIGE BREAKPOINTS ===
 
@@ -757,25 +832,38 @@ p {
 
  */
 
- @media (max-width: 1024px) {
-
-   .col-1 { width: 33.333%;   }
-
- }
-
+@media (max-width: 1024px) {
+    .col-1 {
+        width: 33.333%;
+    }
+}
 
 @media (max-width: 768px) {
-   
-   .col-1 { width: 50%;       }
-   .col-2 { width: 100%;      }
-   .col-3 { width: 100%;      }
-   .col-4 { width: 100%;      }
+    .col-1 {
+        width: 50%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
-   
-   .col-1 { width: 100%;      }
-   .col-2 { width: 100%;      }
-   .col-3 { width: 100%;      }
-   .col-4 { width: 100%;      }
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
 }
