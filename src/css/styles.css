@@ -74,15 +74,15 @@ section {
 }
 
 .btn-typ-1 {
-    background-color: #a62c21;
-    border: 2px solid #a62c21;
+    border: 2px solid #3d3f45;
     color: #0f0f0f;
     padding: 0.4rem 0.6rem;
     transition: border 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
 .btn-typ-1:hover {
-    border: 2px solid #fff;
+    border: 2px solid #9b9b9b;
 }
 
 .btn-typ-2 {
@@ -274,6 +274,9 @@ section {
 #mobile-nav-dropdown:hover > #mobile-nav-content {
     display: block;
 }
+#mobile-nav-dropdown:active > #mobile-nav-content {
+    display: block;
+}
 
 #mobile-nav {
     display: none;
@@ -292,12 +295,13 @@ section {
 
 #countdown-section {
     margin: 0;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
-#countdown-section h1 {
+#countdown-section h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -307,11 +311,28 @@ section {
 
     #countdown-section {
         padding: 0.5rem;
+        padding-bottom: 0;
     }
 }
 
-/* === tech ME BEREICH === */
+/* ABOUT ME SECTION */
+#about {
+    background-color: #f0f0f0;
+}
+#about p,
+h2 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
+/* TECHNOLOGY SECTION */
+
+#tech,
+#tech .col-6 {
+    padding: 0;
+}
 #tech p,
 h1 {
     width: 60%;
@@ -324,7 +345,7 @@ h1 {
     background-color: #464646;
     text-align: center;
     color: #fff;
-    padding: 1rem 3rem 2.5rem;
+    padding: 1rem 1.5rem 1.5rem;
     width: 60%;
     margin-bottom: 2rem;
     border-radius: 25px;
@@ -399,24 +420,14 @@ h1 {
         margin-right: auto;
         margin-left: 0rem;
     }
-}
 
-/* === HEADER - BANNER === */
-
-#header-banner {
-    width: 100%;
-    height: 0;
-    padding-top: 20.83%;
-    background: url('../img/hintergrund.jpg') no-repeat center center;
-    background-size: contain;
-}
-
-#header-banner-klein {
-    width: 100%;
-    height: 0;
-    padding-top: 15.625%;
-    background: url('../img/hintergrund-klein.jpg') no-repeat center center;
-    background-size: contain;
+    #tech .tech-teaser-box {
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }
+    #tech .tech-ansehen-btn {
+        width: 15%;
+    }
 }
 
 /* === NEWSLETTER-BEREICH === */
@@ -492,7 +503,7 @@ h1 {
     }
 }
 
-/* === LEISTUNGEN - SEITE === */
+/* === TECHNOLOGY - SEITE === */
 
 .flex-container {
     display: flex;
@@ -501,6 +512,12 @@ h1 {
     margin-right: auto;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+}
+
+#technologie h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 1366px) {
@@ -512,8 +529,6 @@ h1 {
 @media (max-width: 1024px) {
     .flex-container {
         width: 100%;
-        padding-right: 4rem;
-        padding-left: 4rem;
     }
 }
 
@@ -524,7 +539,7 @@ h1 {
 
 .technologien-box {
     border-radius: 25px;
-    background-color: #3d3f45;
+    background-color: #464646;
     flex-basis: 25%;
     color: #fff;
     padding: 2rem 2rem;
@@ -554,13 +569,13 @@ h1 {
 
 @media (max-width: 1024px) {
     .flex-container {
-        width: 95%;
         flex-direction: column;
     }
 
     .technologien-box {
-        padding: 2rem 4rem;
-        margin-bottom: 1rem;
+        padding: 2rem 2rem;
+        margin-bottom: 0.7rem;
+        margin-top: 0.7rem;
         min-width: initial;
     }
 }
@@ -589,59 +604,6 @@ h1 {
 
 .leistung-auswählen-btn:hover {
     font-weight: normal;
-}
-
-/* === ÜBER UNS BEREICH === */
-
-#über-uns-bereich {
-    background-color: #fff;
-}
-
-#über-uns-container {
-    position: relative;
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#über-uns-container > img {
-    position: absolute;
-    top: 0;
-    right: 100px;
-    height: 100%;
-}
-
-#über-uns-container > p {
-    width: 75%;
-    font-size: 1.2rem;
-}
-
-@media (max-width: 1440px) {
-    #über-uns-container > img {
-        right: 50px;
-    }
-}
-
-@media (max-width: 1280px) {
-    #über-uns-container > img {
-        right: 0px;
-    }
-}
-
-@media (max-width: 1140px) {
-    #über-uns-container > p {
-        width: 70%;
-    }
-}
-
-@media (max-width: 1024px) {
-    #über-uns-container > p {
-        width: 100%;
-    }
-
-    #über-uns-container > img {
-        display: none;
-    }
 }
 
 /* === FOOTER === */
@@ -683,12 +645,21 @@ h1 {
     }
 }
 
-/* === KONTAKT SEITE === */
+/* === KONTAKT SEITE / BEREICH === */
+
+.kontakt-bereich {
+    background-color: #f0f0f0;
+}
+
+#kontakt-seite {
+    background-color: #fff;
+}
 
 #kontakt-formular input,
 #kontakt-formular textarea {
     width: 100%;
     border: 2px solid #3d3f45;
+    border-radius: 10px;
     padding: 0.5rem;
     font-size: 1rem;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
@@ -700,14 +671,15 @@ h1 {
     height: 100px;
 }
 
-#absendenButton {
-    width: 150px;
+#senden {
+    width: 100%;
     height: 39px;
+    font-size: 1rem;
 }
 
 #kontakt-formular input:hover,
 #kontakt-formular textarea:hover {
-    border: 2px solid #a62c21;
+    border: 2px solid #9b9b9b;
 }
 
 @media (max-width: 768px) {
