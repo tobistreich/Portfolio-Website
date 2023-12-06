@@ -11,8 +11,6 @@
     </head>
 
     <body>
-        <script src="./src/index.js"></script>
-
         <!-- NAVIGATIONSLEISTE -->
 
         <nav id="header-nav">
@@ -83,46 +81,31 @@
                         <header class="intro-container">
                             <h1>Kontakt</h1>
                             <p>
-                                Hier finden Sie ein Kontaktformular um Kontakt
-                                mit mir aufzunehmen.
+                                Bitte zögern Sie nicht bei Anfragen jeglicher
+                                Art Kontakt mit mir aufzunehmen, ich freue mich
+                                von Ihnen zu hören.
                             </p>
                         </header>
                     </div>
                 </div>
                 <form
                     onsubmit="sendEmail(); reset(); return false;"
-                    id="kontakt-formular"
+                    id="contact-form"
                     action="kontakt.html"
                     method="post"
                 >
                     <div class="row">
                         <div class="col-3">
-                            <label for="vorname" class="screenreader"
-                                >Vorname:</label
-                            >
+                            <label for="name" class="screenreader">Name:</label>
                             <input
-                                id="vorname"
+                                id="name"
                                 type="text"
-                                name="vorname"
-                                placeholder="Vorname"
+                                name="name"
+                                placeholder="Name"
                                 required
                             />
                         </div>
                         <div class="col-3">
-                            <label for="nachname" class="screenreader"
-                                >Nachname:</label
-                            >
-                            <input
-                                id="nachname"
-                                type="text"
-                                name="nachname"
-                                placeholder="Nachname"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
                             <label for="email" class="screenreader"
                                 >E-Mail:</label
                             >
@@ -143,8 +126,8 @@
                                 >nachricht:</label
                             >
                             <textarea
-                                name="nachricht"
-                                id="nachricht"
+                                name="message"
+                                id="message"
                                 placeholder="Nachricht"
                             ></textarea>
                         </div>
@@ -152,10 +135,9 @@
                     <div class="row">
                         <div class="col-6">
                             <button
-                                id="senden"
+                                class="submit-Btn btn-typ-1"
                                 type="submit"
-                                name="absendenButton"
-                                class="btn-typ-1"
+                                name="submitBtn"
                             >
                                 Senden
                             </button>
@@ -180,18 +162,6 @@
             </div>
         </footer>
     </body>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: 'smtp.elasticmail.com',
-                Username: 'tobias.streich@icloud.com',
-                Password: 'EswBwuHh1)',
-                To: 'tobias.p.streich@gmail.com',
-                From: document.getElementById('email').value,
-                Subject: 'New Contact Form Enquiry',
-                Body: 'Name' + document.getElementByID('nachricht').value,
-            }).then((message) => alert(message));
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./src/mail.js"></script>
 </html>

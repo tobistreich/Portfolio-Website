@@ -656,8 +656,8 @@ h1 {
     background-color: #fff;
 }
 
-#kontakt-formular input,
-#kontakt-formular textarea {
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     border: 2px solid #3d3f45;
     border-radius: 10px;
@@ -668,28 +668,28 @@ h1 {
     transition: border 0.4s ease-in-out;
 }
 
-#kontakt-formular textarea {
+#contact-form textarea {
     height: 100px;
 }
 
-#senden {
+.submit-Btn {
     width: 100%;
     height: 39px;
     font-size: 1rem;
 }
 
-#kontakt-formular input:hover,
-#kontakt-formular textarea:hover {
+#contact-form input:hover,
+#contact-form textarea:hover {
     border: 2px solid #9b9b9b;
 }
 
 @media (max-width: 768px) {
-    #kontakt-formular button {
+    #contact-form button {
         width: 100%;
     }
 }
 
-#kontakt-formular {
+#contact-form {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -697,13 +697,13 @@ h1 {
 }
 
 @media (max-width: 1366px) {
-    #kontakt-formular {
+    #contact-form {
         width: 90%;
     }
 }
 
 @media (max-width: 1024px) {
-    #kontakt-formular {
+    #contact-form {
         width: 100%;
     }
 }
