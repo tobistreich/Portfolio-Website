@@ -27,4 +27,4 @@ function createCountDown(endDate) {
         }
     }, 1000);
 }
-createCountDown('Dec 15, 2023 15:30:00');
+createCountDown('Dec 15, 2023 14:00:00');
