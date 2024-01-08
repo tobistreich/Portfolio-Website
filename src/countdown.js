@@ -22,9 +22,9 @@ function createCountDown(endDate) {
         if (distance < 0) {
             clearInterval(x);
             // Set a new end date (you can customize this date)
-            var newEndDate = new Date('March 23, 2024 15:00:00').getTime();
+            var newEndDate = new Date('May 17, 2024 15:00:00').getTime();
             createCountDown(newEndDate);
         }
     }, 1000);
 }
-createCountDown('Dec 15, 2023 14:00:00');
+createCountDown('March 23, 2024 15:00:00');
